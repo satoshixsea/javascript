@@ -1,4 +1,4 @@
-function get_result_obj(values) {
+function array_unique_count(values) {
   var num = 0;
   var word = [];
   var count = [];
