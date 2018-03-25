@@ -1,4 +1,4 @@
-function array_unique_count(values) {
+function arrayUniqueCount(values) {
   var num = 0;
   var word = [];
   var count = [];
