@@ -1,3 +1,10 @@
+/************************************
+function unique_count() {
+  var values = ["hello", "hi", "hey", "hey", "hey", "hello"];
+  var obj = arrayUniqueCount(values);
+  alert(JSON.stringify(obj));
+}
+************************************/
 function arrayUniqueCount(values) {
   var num = 0;
   var word = [];
