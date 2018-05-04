@@ -5,7 +5,7 @@ function unique_count() {
   alert(JSON.stringify(obj));
 }
 ************************************/
-function arrayUniqueCount(values) {
+function array_unique_count(values) {
   var num = 0;
   var word = [];
   var count = [];
