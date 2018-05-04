@@ -4,6 +4,7 @@ function unique_count() {
   var obj = arrayUniqueCount(values);
   alert(JSON.stringify(obj));
 }
+=> {"hello":2,"hey":3,"hi":1}
 ************************************/
 function arrayUniqueCount(values) {
   var num = 0;
