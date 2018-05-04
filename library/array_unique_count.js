@@ -6,6 +6,7 @@ function unique_count() {
 }
 ************************************/
 function array_unique_count(values) {
+  var values = ["hello", "hi", "hey", "hey", "hey", "hello", "hi", "hey"];
   var num = 0;
   var word = [];
   var count = [];
