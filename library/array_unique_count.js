@@ -1,4 +1,5 @@
 /************************************
+TEST CODE
 function unique_count() {
   var values = ["hello", "hi", "hey", "hey", "hey", "hello"];
   var obj = arrayUniqueCount(values);
