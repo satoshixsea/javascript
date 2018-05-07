@@ -5,7 +5,7 @@ var data = [{"key1","value1"},{"key2","value2"}...];
 function get_match_data(){
   var obj = data;
   var text = "s";
-  var pattern = "[〇〆々㐂-頻]+|[ぁ-ゟー]+|[゠-ヿ]+|[ｦ-ﾟ]+|[a-zA-Z0-9-]+|[ａ-ｚＡ-Ｚ０-９]+";
+  var pattern = "[々〆〇〻㐂-頻]+|[ぁ-ゟー]+|[゠-ヿ]+|[ｦ-ﾟ]+|[a-zA-Z0-9]+|[ａ-ｚＡ-Ｚ０-９]+";
   var flag = "g";
   var regexp = new RegExp(pattern, flag);
   var match_obj = LIB.seahorse(obj, regexp, sentence);
