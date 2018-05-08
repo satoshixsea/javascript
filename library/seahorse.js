@@ -77,3 +77,11 @@ function get_match_data(obj_i) {
   var match_data = AND_REGEXP.test(row_values);
   return match_data;
 }
+
+function get_match_text(match_obj){
+  var text = "";
+  for(var i = 0; i < match_obj.length; i++){
+    text += match_obj[i]["text"] + "\n";
+  }
+  return text;
+}
