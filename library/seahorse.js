@@ -12,6 +12,7 @@ function get_match_data(){
   console.log(match_obj["match_data"]);
 }
 
+//regexpを空にするとデフォルトでひらがなを除いたvar without_hira = /[々〆〇〻㐂-頻]+|[゠-ヿ]+|[ｦ-ﾟ]+|[a-zA-Z0-9]+|[ａ-ｚＡ-Ｚ０-９]+/g;が入る
 function get_match_data_without_hira(){
   var obj = data;
   var text = "s";
