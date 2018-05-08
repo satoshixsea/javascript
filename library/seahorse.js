@@ -9,7 +9,7 @@ function get_match_data(){
   var flag = "g";
   var regexp = new RegExp(pattern, flag);
   var match_obj = LIB.seahorse(obj, regexp, sentence);
-  Logger.log(match_obj["match_data"]);
+  console.log(match_obj["match_data"]);
 }
 ************************************/
 var OBJ_HEADER;
