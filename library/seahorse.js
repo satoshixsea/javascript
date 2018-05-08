@@ -11,17 +11,34 @@ function get_match_data(){
   var match_obj = LIB.seahorse(obj, regexp, sentence);
   console.log(match_obj["match_data"]);
 }
+
+function get_match_data_without_hira(){
+  var obj = data;
+  var text = "s";
+  var regexp = "";
+  var match_obj = LIB.seahorse(obj, regexp, sentence);
+  console.log(match_obj["match_data"]);
+}
 ************************************/
 var OBJ_HEADER;
 var AND_REGEXP;
 
 function seahorse(obj, regexp, sentence){
+  var regexp = get_regexp(regexp);
   OBJ_HEADER = Object.keys(obj[0])
   var match_words = get_match_words(regexp, sentence);
   get_and_regexp(match_words);
   var match_data = obj.filter(get_match_data);
   var match_obj = get_match_obj(match_words, match_data);
   return match_obj;
+}
+
+function get_regexp(regexp){
+  if(regexp == ""){
+    var without_hira = /[々〆〇〻㐂-頻]+|[゠-ヿ]+|[ｦ-ﾟ]+|[a-zA-Z0-9]+|[ａ-ｚＡ-Ｚ０-９]+/g;
+    regexp = without_hira;
+  }
+  return regexp;
 }
 
 function get_match_obj(match_words, match_data){
